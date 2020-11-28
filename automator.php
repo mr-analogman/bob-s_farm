@@ -27,9 +27,7 @@ class Automator {
       }
 
       $type = $types[$animalType];
-      $newAnimal = new Animals();
-      $newAnimal->setId($id);
-      $newAnimal->setType($type);
+      $newAnimal = new Animals($id, $type);
       $newAnimalsArr[] = $newAnimal;
       $this->animalsArr[] = $newAnimal;
     }

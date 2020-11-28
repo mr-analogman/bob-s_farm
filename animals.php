@@ -5,9 +5,9 @@ class Animals {
   private $type;
   private $product;
 
-  public function __init($id, $type) {
-    setId($id);
-    setType($type);
+  public function __construct($id, $type) {
+    $this->setId($id);
+    $this->setType($type);
   }
 
   public function setId($id) {
